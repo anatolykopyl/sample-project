@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+}
+
+.app {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.task-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 8px;
+}
+
+.task-form button,
+.task-list button {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.error {
+  color: #c62828;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.task-list li.done span {
+  text-decoration: line-through;
+  color: #777;
+}

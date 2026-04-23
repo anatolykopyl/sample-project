@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Environment (keep .env.example tracked)
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+frontend/dist/
+
+# SQLite database (created by init script; keep schema in repo)
+database/*.sqlite
+database/*.sqlite-journal
+database/*.sqlite-wal
+database/*.sqlite-shm
+
+# Logs and debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Test / coverage
+coverage/
+.nyc_output/
