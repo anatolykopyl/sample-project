@@ -1,0 +1,11 @@
+---
+# Hosts and non-secret vars. SSH key path is set in ansible.cfg (../secrets/deploy_key).
+all:
+  hosts:
+    minitasks_production:
+      ansible_host: 81.26.181.94
+      ansible_user: webmaster
+      ansible_ssh_common_args: "-o StrictHostKeyChecking=accept-new"
+  vars:
+    app_name: minitasks
+    app_root: "/home/{{ ansible_user }}/{{ app_name }}"

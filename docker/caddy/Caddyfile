@@ -1,0 +1,13 @@
+deploymator.kopyl.dev {
+	root * /srv
+	encode gzip
+
+	handle /tasks* {
+		reverse_proxy backend:4000
+	}
+
+	handle {
+		try_files {path} /index.html
+		file_server
+	}
+}
